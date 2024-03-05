@@ -11,6 +11,8 @@ connectDB();
 
 app.get("/", (req, res) => res.send("Running"));
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/api/users", userRoutes);
 app.use(notFound);
 app.use(errorHandler);
