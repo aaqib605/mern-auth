@@ -1,4 +1,12 @@
+import Header from "./components/Header";
+import HomeScreen from "./screens/HomeScreen";
+
 const App = () => {
-  return <div>MERN Auth</div>;
+  return (
+    <>
+      <Header />
+      <HomeScreen />
+    </>
+  );
 };
 export default App;
